@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Estilo de Encabezado-->
     <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
+    <!-- Estilos de pagina-->
+    <link rel="stylesheet" href="/CSS/EstilosIndex.css">
     <title>Dulce Antojito</title>
 </head>
 <header>
+
+
     <div class="encabezado">
         <div class="encabezado-izquierda">
             <img src="/Material/menu.jpg" class="menu" alt=""/>
             <nav class="navegacion">
                 <a href="html/NuestraCarta.html">Nuestra carta</a>
-                <a href="html/Locales.html">Locales</a>
+                <a href="html/Locales.html" >Locales</a>
             </nav>
         </div>
         <div class="encabezado-centro">
@@ -24,7 +32,33 @@
         </div>
     </div>
     <div class="frase">
-        <p>"Bienvenidos a <b>Dulce Antojito</b>, donde la calidad y el sabor se encuentran"</p>
+        <p class="frase-text">"Bienvenidos a <b>Dulce Antojito</b>, donde la calidad y el sabor se encuentran"</p>
     </div>
+
+
+    <div class="Contenedor-Carrusel">
+        <button class="carrusel-boton prev">❮</button>
+        <div class="carrusel">
+            <div class="contenedor">
+                <img src="/catalogoanuncios/1.png" class="imagen1" alt="Imagen 1"/>
+                <img src="/catalogoanuncios/2.png" class="imagen2" alt="Imagen 2"/>
+            </div>
+            <div class="contenedor">
+                <img src="/catalogoanuncios/3.png" class="imagen3" alt="Imagen 3"/>
+                <img src="/catalogoanuncios/4.png" class="imagen4" alt="Imagen 4"/>
+            </div>
+            <div class="contenedor">
+                <img src="/catalogoanuncios/5.png" class="imagen2" alt="Imagen 5"/>
+                <img src="/catalogoanuncios/6.png" class="imagen6" alt="Imagen 6"/>
+            </div>
+            <div class="contenedor">
+                <img src="/catalogoanuncios/7.png" class="imagen7" alt="Imagen 7"/>
+                <img src="/catalogoanuncios/8.png" class="imagen8" alt="Imagen 8"/>
+            </div>
+        </div>
+        <button class="carrusel-boton next" >❯</button>
+    </div>
+
+
 </header>
 </html>

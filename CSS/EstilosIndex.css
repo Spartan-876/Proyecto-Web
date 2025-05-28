@@ -1,0 +1,38 @@
+.Contenedor-Carrusel {
+    position: relative;
+    max-width: max-content;
+    max-height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    width: 100%;
+}
+
+.contenedor {
+    min-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.contenedor img {
+    width: 50%;
+    height: max-content;
+    object-fit: cover;
+}
+
+.carrusel-boton {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

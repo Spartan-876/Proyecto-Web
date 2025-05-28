@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Bodoni MT", sans-serif;
 }
+
 
 .encabezado {
     background-color: #571b02;
@@ -39,6 +39,8 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: poppins, serif;
+    font-style: normal;
 }
 
 .boton-pide {
@@ -51,6 +53,8 @@
     color: #571b02;
     font-weight: bold;
     cursor: pointer;
+    font-family: poppins, sans-serif;
+    font-style: normal;
 }
 
 .logo {
@@ -64,6 +68,12 @@
     color: #5d1f00;
     text-align: center;
     padding: 10px 0;
+
+}
+
+.frase p, .frase b {
+    font-family: poppins, serif;
+    font-style: normal;
 }
 
 .menu{
