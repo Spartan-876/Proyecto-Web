@@ -18,7 +18,7 @@
 }
 
 .contenedor img {
-    width: 50%;
+    width: 100%;
     height: max-content;
     object-fit: cover;
 }
@@ -31,6 +31,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 100%;
     z-index: 10;
 }
 
@@ -42,6 +43,7 @@
     font-style: normal;
     text-align: center;
     font-size: 25px;
+    margin: 20px 0;
 }
 
 .contenedor-Locales{
@@ -50,7 +52,7 @@
     text-align: center;
     max-width: max-content;
     max-height: 700px;
-    margin: 20px;
+    margin: 60px;
     overflow: hidden;
     display: inline-flex;
 }
@@ -68,12 +70,14 @@
 .contLocal img{
     width: 100%;
     height: max-content;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px;
     object-fit: cover;
 }
 
 .contLocal p{
     font-family: poppins, serif;
+    border-top: black solid 3px;
     font-style: normal;
     text-align: center;
+    font-size: 30px;
 }
