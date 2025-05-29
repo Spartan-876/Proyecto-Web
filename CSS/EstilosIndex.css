@@ -36,3 +36,44 @@
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+.tituloLocales {
+    font-family: poppins, serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenedor-Locales{
+    font-family: poppins, serif;
+    font-style: normal;
+    text-align: center;
+    max-width: max-content;
+    max-height: 700px;
+    margin: 20px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.contLocal{
+    align-items: center;
+    width: 33%;
+    height: auto;
+    margin: 5px 50px;
+    border: 3px solid black;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.contLocal img{
+    width: 100%;
+    height: max-content;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.contLocal p{
+    font-family: poppins, serif;
+    font-style: normal;
+    text-align: center;
+}
