@@ -95,6 +95,7 @@
 }
 
 .infoLocales {
+    font-family: poppins, serif;
     background-color: #fff;
     padding: 10px;
     transition: max-height 0.3s ease;

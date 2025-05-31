@@ -36,7 +36,7 @@
     justify-content: flex-end;
 }
 
-.navegacion a {
+.navegacion a{
     margin-left: 10px;
     color: white;
     text-decoration: none;
@@ -87,9 +87,13 @@
     font-size: 1.4vw;
 }
 
+.menu-icon {
+    width: 15%;
+}
+
 .menu{
     cursor: pointer;
-    width:15%;
+    width:100%;
 }
 
 .logo{
@@ -101,6 +105,48 @@
     margin-left: 10%;
     width: 15%;
 }
+
+#toggle-menu{
+    display: none;
+}
+
+.navegacion-extra {
+    display: none;
+}
+
+.navegacion-extra2 {
+    display: none;
+}
+
+#toggle-menu:checked ~ .navegacion-extra {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 10px 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #571b02;
+}
+
+.navegacion-extra a{
+    font-family: poppins, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 1.5vw;
+}
+
+.navegacion-extra a:hover{
+    text-decoration: underline;
+}
+
+
 
 @media (max-width: 900px) {
     .navegacion {
@@ -147,5 +193,48 @@
 
     .frase p, .frase b {
         font-size: 2vw;
+    }
+
+    .encabezado-izquierda {
+        display: flex;
+        align-items: center;
+    }
+
+    .navegacion-fija {
+        gap: 10px;
+    }
+
+    .contLocal p,
+    .ciudad,
+    .direccion {
+        font-size: 4vw;
+    }
+
+    .tituloLocales {
+        font-size: 3vw;
+    }
+
+    #toggle-menu:checked ~ .navegacion-extra2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 40%;
+        height: 100vh;
+        padding: 10px 0;
+        z-index: 10;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        background-color: #571b02;
+    }
+
+    .navegacion-extra2 a{
+        font-family: poppins, sans-serif;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        font-size: 4vw;
     }
 }
