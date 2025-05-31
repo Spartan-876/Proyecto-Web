@@ -68,46 +68,97 @@
 
 .contLocal{
     align-items: center;
+    text-align: center;
     width: 33%;
     height: auto;
     margin: 5px 50px;
     border: 3px solid #571b02;
     border-radius: 10%;
     object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
 }
 
-.contLocal img{
+.contenedor-imagen {
     width: 100%;
-    height: max-content;
-    border-radius: 100%;
-    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
 
-.contLocal p{
-    font-family: poppins, serif;
-    border-top: #571b02 solid 3px;
-    font-style: normal;
-    text-align: center;
-    font-size: 2vw;
+.contenedor-imagen img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
 }
+
+.infoLocales {
+    background-color: #fff;
+    padding: 10px;
+    transition: max-height 0.3s ease;
+}
+
+.ciudad {
+    font-family: poppins, serif;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.direccion {
+    font-size: 1.5vw;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.contLocal:hover .contenedor-imagen {
+    height: 70%;
+}
+
+.contLocal:hover .contenedor-imagen img {
+    transform: scale(1.5);
+}
+
+.contLocal:hover .direccion {
+    opacity: 1;
+    max-height: max-content;
+}
+
 
 @media (max-width: 900px) {
-
-    .Locales{
-        flex-direction: column;
-        align-items: center;
-    }
-
     .contenedor-Locales {
         flex-direction: column;
         align-items: center;
     }
 
-    .contLocal{
+    .contLocal {
+        width: 50%;
+        height: auto;
         margin-bottom: 5%;
     }
 
-    .contLocal p{
+    .contenedor-imagen {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .contenedor-imagen img {
+        width: 100%;
+        display: block;
+    }
+
+    .direccion {
+        opacity: 1;
+        max-height: none;
+        font-size: 4vw;
+    }
+
+    .contLocal p,
+    .ciudad {
         font-size: 4vw;
     }
 
