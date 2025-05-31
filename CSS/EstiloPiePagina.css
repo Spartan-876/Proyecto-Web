@@ -58,13 +58,15 @@
     margin: 5% 3%;
 }
 
+.Contacto-horario .Horario-txt{
+    margin: 5% 0;
+}
+
 .Contacto{
     display: flex;
     align-items: center;
     box-sizing: border-box;
 }
-
-
 
 .Contacto img{
     width: 10%;
@@ -86,4 +88,65 @@
 .ServicioCliente p{
     font-size: 1vw;
     margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+    @media (max-width: 900px) {
+        .Pie-Pagina {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .Logo-Redes,
+        .Contacto-horario,
+        .ServicioCliente {
+            width: 50%;
+            margin: 10px 0 ;
+            text-align: left;
+        }
+
+        .Logo-Redes p,
+        .Contacto-horario p,
+        .ServicioCliente p {
+            font-size: 3vw;
+            text-align: left;
+        }
+
+        .Logo-Redes p{
+            margin: 5% 0;
+        }
+        .Contacto-horario .Horario-txt{
+            margin: 5% 0;
+        }
+
+        .Contacto-horario h2,
+        .ServicioCliente h2 {
+            font-size: 4vw;
+        }
+
+        .Horario{
+            margin-top: 20px;
+        }
+
+        .Redes-Pagina {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .Redes-Pagina img {
+            width: 15%;
+            margin: 0 5%;
+        }
+
+        .Contacto img {
+            width: 10%;
+            ;
+        }
+
+        .logo-pie {
+            width: 50%;
+        }
+    }
 }

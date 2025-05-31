@@ -106,4 +106,46 @@
     .navegacion {
         display: none;
     }
+
+    .encabezado {
+        padding: 10px 15px;
+    }
+
+    .encabezado-izquierda {
+        flex: 0 0 auto;
+        gap: 10px;
+    }
+
+    .encabezado-centro {
+        width: auto;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .encabezado-derecha {
+        flex: 0 0 auto;
+        gap: 10px;
+    }
+
+    .menu {
+        width: 30px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .boton-pide {
+        padding: 6px 10px;
+        font-size: 2vw;
+    }
+
+    .icon-registro {
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .frase p, .frase b {
+        font-size: 2vw;
+    }
 }

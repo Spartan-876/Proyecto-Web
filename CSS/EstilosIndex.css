@@ -73,14 +73,9 @@
 }
 
 .contenedor-Locales{
-    font-family: poppins, serif;
-    font-style: normal;
-    text-align: center;
-    max-width: max-content;
-    max-height: 100vh;
-    margin: 3vw 4vh;
-    overflow: hidden;
-    display: inline-flex;
+    margin-bottom: 3vh;
+    display: flex;
+
 }
 
 .contLocal{
@@ -106,4 +101,26 @@
     font-style: normal;
     text-align: center;
     font-size: 2vw;
+}
+
+@media (max-width: 900px) {
+
+    .Locales{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-Locales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contLocal{
+        margin-bottom: 5%;
+    }
+
+
+    .tituloLocales {
+        font-size: 2vw;
+    }
 }
