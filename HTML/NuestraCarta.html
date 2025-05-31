@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Estilos de pagina-->
+    <link rel="stylesheet" href="/CSS/EstiloNuestraCarta.css">
+    <!-- Estilo de Encabezado-->
+    <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
+    <!-- Estilos de pie de pagina-->
+    <link rel="stylesheet" href="/CSS/EstiloPiePagina.css">
+
+    <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
+
+    <title>Nuestra Carta</title>
+</head>
+<body>
+<header>
+
+
+    <div class="encabezado">
+        <div class="encabezado-izquierda">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="menu-icon">
+                <img src="/Material/Icons/menu.jpg" class="menu" alt="Menú"/>
+            </label>
+            <nav class="navegacion">
+                <a href="NuestraCarta.html">Nuestra carta</a>
+            </nav>
+            <nav class="navegacion-extra">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Servicios.html">Servicios</a>
+                <a href="Clientes.html">Clientes satisfechos</a>
+            </nav>
+
+            <nav class="navegacion-extra2">
+                <a href="NuestraCarta.html">Nuestra carta</a>
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Servicios.html">Servicios</a>
+                <a href="Clientes.html">Clientes satisfechos</a>
+            </nav>
+
+        </div>
+        <div class="encabezado-centro">
+            <a href="../index.html" class="logo-a">
+                <img src="/Material/Icons/logo-encabezado.png" class="logo" alt="">
+            </a>
+        </div>
+        <div class="encabezado-derecha">
+            <button class="boton-pide">¡Pide aquí!</button>
+            <img src="/Material/Icons/user.png" class="icon-registro" alt=""/>
+        </div>
+    </div>
+    <div class="frase">
+        <p class="frase-text">"Cada postre cuenta una historia... encuentra el tuyo."</p>
+    </div>
+</header>
+
+<main>
+
+    <div class="Contenedor-principal">
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit" onclick="location.href='Producto.html'">🔍</button>
+        </div>
+        <div class="catalogo">
+            <div class="Categoria">
+                <h2>Categorias</h2>
+                <p>¡Novedades!</p>
+                <p>Combos</p>
+                <p>Tortas</p>
+                <p>Pie</p>
+                <p>Empanadas</p>
+                <p>Helados</p>
+                <p>Postre helado</p>
+                <p>Bocaditos dulces</p>
+                <p>Bocaditos Salados</p>
+                <p>Jugos y bebidas</p>
+                <p>Bebidas calientes</p>
+                <p>Decoraciones</p>
+                <p>otros...</p>
+            </div>
+            <div class="matrizProducto">
+                <div class="barra-filtro">
+                    <p class="Resultado">Mostrando 1-9 de 25 resultados</p>
+                    <p class="Ordenar">Ordenar por:</p>
+                    <select name="ordenamiento"  class="Lista">
+                        <option value="0"></option>
+                        <option value="1">Nombre</option>
+                        <option value="2">precio</option>
+                        <option value="3">Mas vendido </option>
+                    </select>
+                </div>
+                <div class="ProductosFila">
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/alfajores.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Alfajor</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/caracol.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Caracol</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/empanadas.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Empanadas</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProductosFila">
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/niditosdeamor2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Niditos de Amor</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/piedefresa.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Pie de Fresa</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/piedelimon.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Pie de Limón</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProductosFila">
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/piedemanzana.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Pie de Manzana</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/sandwich.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Sandwich</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-producto">
+                        <div class="contenedor-imagen">
+                            <img src="/Material/Catalogo/tortadechocolate2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="nombre-producto">Torta de Chocolate</p>
+                            <p class="precio-producto">S/9.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="Pie-Pagina">
+        <div class="Logo-Redes">
+            <img src="/Material/Icons/Logocompleto.png" class="logo-pie" alt=""/>
+            <p>Encuéntranos en ...</p>
+            <div class="Redes-Pagina">
+                <img src="/Material/Icons/facebook.png" class="facebook" alt="">
+                <img src="/Material/Icons/instagram.png" class="instagram" alt="">
+                <img src="/Material/Icons/whatssapp.png" class="whatsapp" alt="">
+            </div>
+        </div>
+        <div class="Contacto-horario">
+            <h2>Contactanos</h2>
+            <div class="Contacto">
+                <img src="/Material/Icons/telefono.png" alt=""><p>(074) 444-444</p>
+            </div>
+            <div class="Contacto">
+                <img src="/Material/Icons/phonetext.png" alt=""><p>999 999 999</p>
+            </div>
+            <div class="Contacto">
+                <img src="/Material/Icons/mail.png" alt=""><p>dulceantojito@gmail.com</p>
+            </div>
+            <div class="Horario-atencion">
+                <h2 class="Horario">Horario de atención</h2>
+                <p class="Horario-txt">De lunes a domingo de 10am a 8pm</p>
+            </div>
+        </div>
+        <div class="ServicioCliente">
+            <h2>Servicio Cliente</h2>
+            <p><a href="ServicioCliente.html">Preguntas Frecuentes</a></p>
+            <p>Politicas de cookies</p>
+            <p>Legales Web</p>
+            <p>Libro de reclamaciones</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

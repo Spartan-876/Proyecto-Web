@@ -91,7 +91,6 @@
 }
 
 @media (max-width: 900px) {
-    @media (max-width: 900px) {
         .Pie-Pagina {
             flex-direction: column;
             align-items: center;
@@ -148,5 +147,4 @@
         .logo-pie {
             width: 50%;
         }
-    }
 }

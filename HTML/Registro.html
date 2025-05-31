@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Estilo de Encabezado-->
+    <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
+    <!-- Estilos de pagina-->
+    <link rel="stylesheet" href="/CSS/EstiloRegistro.css">
+
+
+
+    <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
+
+    <title>Registro de Usuario</title>
+</head>
+
+<header>
+
+
+    <div class="encabezado">
+        <div class="encabezado-izquierda">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="menu-icon">
+                <img src="/Material/Icons/menu.jpg" class="menu" alt="Menú"/>
+            </label>
+            <nav class="navegacion">
+                <a href="NuestraCarta.html">Nuestra carta</a>
+            </nav>
+            <nav class="navegacion-extra">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Servicios.html">Servicios</a>
+                <a href="Clientes.html">Clientes satisfechos</a>
+            </nav>
+
+            <nav class="navegacion-extra2">
+                <a href="NuestraCarta.html">Nuestra carta</a>
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Servicios.html">Servicios</a>
+                <a href="Clientes.html">Clientes satisfechos</a>
+            </nav>
+
+        </div>
+        <div class="encabezado-centro">
+            <a href="../index.html" class="logo-a">
+                <img src="/Material/Icons/logo-encabezado.png" class="logo" alt="">
+            </a>
+        </div>
+        <div class="encabezado-derecha">
+            <button class="boton-pide" onclick="location.href='Registro.html'">¡Pide aquí!</button>
+            <img src="/Material/Icons/user.png" class="icon-registro" alt=""/>
+        </div>
+    </div>
+    <div class="frase">
+        <p class="frase-text">"¿Tienes una idea dulce? Cuéntanos y nosotros te ayudamos a hacerla realidad.”</p>
+    </div>
+</header>
+
+<main>
+    <div class="contenedor-principal">
+        <!-- Contenedor principal -->
+        <div class="contenedor-flex">
+
+            <!-- Formulario -->
+            <form class="formulario">
+                <label><strong>Nombre completo:</strong><br />
+                    <input type="text" placeholder="Nombres y apellidos" />
+                </label>
+
+                <label><strong>Teléfono:</strong><br />
+                    <input type="text" placeholder="Teléfono" />
+                </label>
+
+                <div class="opciones-contacto">
+                    <label><input type="radio" name="contacto" /> Llamada</label>
+                    <label><input type="radio" name="contacto" /> Whatsapp</label>
+                </div>
+
+                <label><strong>Correo:</strong><br />
+                    <input type="email" placeholder="Correo" />
+                </label>
+
+                <label><strong>Motivo:</strong><br />
+                    <input type="text" placeholder="Motivo de contacto" />
+                </label>
+
+                <label><strong>Mensaje:</strong><br />
+                    <textarea placeholder="Describe lo que buscas" rows="4"></textarea>
+                </label>
+
+                <!-- Botón enviar-->
+                <button type="submit" class="boton-enviar">
+                    Enviar
+                </button>
+            </form>
+
+            <!-- Línea vertical marrón -->
+            <div class="linea-vertical"></div>
+
+            <!-- Imagen de pastel -->
+            <div class="contenedor-imagen">
+                <img src="/Material/Icons/Logocompleto.png" alt="Dulce Antojito" />
+            </div>
+        </div>
+    </div>
+</main>
+
+</html>

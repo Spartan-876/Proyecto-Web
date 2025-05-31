@@ -1,0 +1,64 @@
+.Contenedor-Carrusel {
+    position: relative;
+    max-width: max-content;
+    max-height: 80vh;
+    margin: 10vh auto;
+    overflow: hidden;
+}
+
+.frase p, .frase b {
+    font-size: 4vw !important;
+}
+
+.carrusel {
+    display: flex;
+    width: 100%;
+    animation: deslizar 48s infinite;
+}
+@keyframes deslizar {
+    0%     { transform: translateX(0%); }
+    8.33%  { transform: translateX(0%); }
+    12.5%  { transform: translateX(-100%); }
+
+    20.83% { transform: translateX(-100%); }
+    25%    { transform: translateX(-200%); }
+
+    33.33% { transform: translateX(-200%); }
+    37.5%  { transform: translateX(-300%); }
+
+    45.83% { transform: translateX(-300%); }
+    50%    { transform: translateX(-400%); }
+
+    58.33% { transform: translateX(-400%); }
+    62.5%  { transform: translateX(-500%); }
+
+    70.83% { transform: translateX(-500%); }
+    75%    { transform: translateX(-600%); }
+
+    83.33% { transform: translateX(-600%); }
+    87.5%  { transform: translateX(-700%); }
+
+    95.83% { transform: translateX(-700%); }
+    100%   { transform: translateX(0%); }
+}
+
+.contenedor {
+    min-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.contenedor img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px){
+    .frase p, .frase b {
+        font-size: 4vw !important;
+    }
+
+    .Contenedor-Carrusel {
+        margin: 5vh auto;
+    }
+}
