@@ -71,33 +71,40 @@ section {
 
 @media (max-width: 900px){
 
-    .frase p, .frase b {
-        font-size: 4vw !important;
-    }
-
     section {
-        margin: 5vh 10vw ;
-    }
-
-    .imagen {
-        display: none;
-    }
-
-    .columna h1{
-        font-size: 100%;
-    }
-
-    .columna p {
-        font-size: 70%;
+        max-width: 70vw;
+        padding: 1.5em 1em;
     }
 
     .contenedor-flex {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-wrap: wrap;
+        gap: 1em;
     }
 
-    .servicio1, .servicio2, .servicio3 {
+    .columna {
+        flex: 1 1 45%;
+    }
+
+    .columna img {
         width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .columna h1 {
+        font-size: 2.5vw;
+    }
+
+    .columna p {
+        font-size: 2vw;
+    }
+
+    .boton {
+        font-size: 2vw;
+        padding: 0.4em 0.8em;
+    }
+
+    .frase p, .frase b {
+        font-size: 5vw !important;
     }
 }

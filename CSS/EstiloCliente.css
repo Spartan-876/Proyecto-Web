@@ -1,7 +1,7 @@
 .Contenedor-Carrusel {
     position: relative;
     max-width: max-content;
-    max-height: 80vh;
+    max-height: 90vh;
     margin: 10vh auto;
     overflow: hidden;
 }
@@ -13,33 +13,29 @@
 .carrusel {
     display: flex;
     width: 100%;
-    animation: deslizar 48s infinite;
+    animation: deslizar 40s infinite;
 }
 @keyframes deslizar {
+    /* Cada bloque es 7s: 5s stop + 2s transición */
+
     0%     { transform: translateX(0%); }
-    8.33%  { transform: translateX(0%); }
-    12.5%  { transform: translateX(-100%); }
+    12.5%  { transform: translateX(0%); }       /* 5s stop (12.5% de 40s = 5s) */
+    17.5%  { transform: translateX(-100%); }    /* 2s transición (5% de 40s = 2s) */
 
-    20.83% { transform: translateX(-100%); }
-    25%    { transform: translateX(-200%); }
+    29.5%  { transform: translateX(-100%); }    /* 5s stop */
+    34.5%  { transform: translateX(-200%); }    /* 2s transición */
 
-    33.33% { transform: translateX(-200%); }
-    37.5%  { transform: translateX(-300%); }
+    46.5%  { transform: translateX(-200%); }    /* 5s stop */
+    51.5%  { transform: translateX(-300%); }    /* 2s transición */
 
-    45.83% { transform: translateX(-300%); }
-    50%    { transform: translateX(-400%); }
+    63.5%  { transform: translateX(-300%); }    /* 5s stop */
+    68.5%  { transform: translateX(-400%); }    /* 2s transición */
 
-    58.33% { transform: translateX(-400%); }
-    62.5%  { transform: translateX(-500%); }
+    80.5%  { transform: translateX(-400%); }    /* 5s stop */
+    85.5%  { transform: translateX(-500%); }    /* 2s transición */
 
-    70.83% { transform: translateX(-500%); }
-    75%    { transform: translateX(-600%); }
-
-    83.33% { transform: translateX(-600%); }
-    87.5%  { transform: translateX(-700%); }
-
-    95.83% { transform: translateX(-700%); }
-    100%   { transform: translateX(0%); }
+    97.5%  { transform: translateX(-500%); }    /* 5s stop */
+    100%   { transform: translateX(0%); }       /* vuelta al inicio */
 }
 
 .contenedor {
@@ -58,7 +54,7 @@
         font-size: 4vw !important;
     }
 
-    .Contenedor-Carrusel {
-        margin: 5vh auto;
+    .contenedor-imagen img{
+        width: 100%;
     }
 }

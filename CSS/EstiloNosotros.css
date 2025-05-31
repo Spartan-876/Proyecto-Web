@@ -48,46 +48,63 @@ section>p{
 
 .columna {
     flex: 1 1 45%;
+    height: 40vh;
+    overflow: hidden;
+    align-content: center;
 }
 
 .columna img {
-    width: 45%;
+    width: 100%;
+    border-radius: 5%;
     height: auto;
-    border-radius: 8px;
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 
 @media (max-width: 900px) {
-
-    .frase p, .frase b {
-        font-size: 6vw !important;
+    section {
+        margin: 2em 3em;
+        padding: 2em 1em;
     }
 
-    section {
-        margin: 2em 2em;
-    }
-
-    section {
-        font-size: 3vw;
+    section p{
+        font-size: 2vw;
     }
 
     .contenedor-flex {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
     }
 
     .columna {
-        width: 100%;
-        text-align: center;
+        flex: 1 1 45%;
+        height: auto;
     }
 
     .columna img {
-        display: none;
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
     }
 
+    .columna h1 {
+        font-size: 3vw;
+        text-align: left;
+    }
 
+    .columna p {
+        font-size: 2vw;
+        text-align: left;
+    }
 
+    .columna.texto.vision h1,
+    .columna.texto.vision p {
+        text-align: right;
+    }
+
+    .frase p, .frase b {
+        font-size: 5vw !important;
+    }
 }
 
 
