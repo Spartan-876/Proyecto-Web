@@ -83,7 +83,7 @@
     width: 33%;
     height: auto;
     margin: 5px 50px;
-    border: 3px solid black;
+    border: 3px solid #571b02;
     border-radius: 10%;
     object-fit: cover;
 }
@@ -97,7 +97,7 @@
 
 .contLocal p{
     font-family: poppins, serif;
-    border-top: black solid 3px;
+    border-top: #571b02 solid 3px;
     font-style: normal;
     text-align: center;
     font-size: 2vw;
@@ -119,8 +119,11 @@
         margin-bottom: 5%;
     }
 
+    .contLocal p{
+        font-size: 4vw;
+    }
 
     .tituloLocales {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }
