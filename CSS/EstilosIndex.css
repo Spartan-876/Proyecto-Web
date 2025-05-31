@@ -9,32 +9,34 @@
 .carrusel {
     display: flex;
     width: 100%;
-    animation: deslizar 96s infinite;
+    animation: deslizar 64s infinite;
 }
 @keyframes deslizar {
     0% { transform: translateX(0%); }
-    10.4% { transform: translateX(0%); }
-    12.5% { transform: translateX(-100%); }
+    7.5% { transform: translateX(0%); }
+    9.375% { transform: translateX(-100%); }
 
-    22.9% { transform: translateX(-100%); }
-    25% { transform: translateX(-200%); }
+    16.875% { transform: translateX(-100%); }
+    18.75% { transform: translateX(-200%); }
 
-    35.4% { transform: translateX(-200%); }
-    37.5% { transform: translateX(-300%); }
+    26.25% { transform: translateX(-200%); }
+    28.125% { transform: translateX(-300%); }
 
-    47.9% { transform: translateX(-300%); }
-    50% { transform: translateX(-400%); }
+    35.625% { transform: translateX(-300%); }
+    37.5% { transform: translateX(-400%); }
 
-    60.4% { transform: translateX(-400%); }
-    62.5% { transform: translateX(-500%); }
+    45% { transform: translateX(-400%); }
+    46.875% { transform: translateX(-500%); }
 
-    72.9% { transform: translateX(-500%); }
-    75% { transform: translateX(-600%); }
+    54.375% { transform: translateX(-500%); }
+    56.25% { transform: translateX(-600%); }
 
-    85.4% { transform: translateX(-600%); }
-    87.5% { transform: translateX(-700%); }
+    63.75% { transform: translateX(-600%); }
+    65.625% { transform: translateX(-700%); }
 
-    97.9% { transform: translateX(-700%); }
+    73.125% { transform: translateX(-700%); }
+    75% { transform: translateX(0%); }
+
     100% { transform: translateX(0%); }
 }
 
@@ -49,20 +51,6 @@
     object-fit: cover;
 }
 
-.carrusel-boton {
-    position: absolute;
-    top: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 1%;
-    cursor: pointer;
-    border-radius: 80%;
-    z-index: 10;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
 
 .tituloLocales {
     font-family: poppins, serif;
