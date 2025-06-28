@@ -1,6 +1,10 @@
+body {
+    margin-top: clamp(16vh,16vh, 100vw);
+}
+
 .Contenedor-Carrusel {
     position: relative;
-    max-width: max-content;
+    max-width: 100vw;
     max-height: 100vh;
     margin: 0 auto;
     overflow: hidden;
@@ -15,28 +19,20 @@
     0% { transform: translateX(0%); }
     7.5% { transform: translateX(0%); }
     9.375% { transform: translateX(-100%); }
-
     16.875% { transform: translateX(-100%); }
     18.75% { transform: translateX(-200%); }
-
     26.25% { transform: translateX(-200%); }
     28.125% { transform: translateX(-300%); }
-
     35.625% { transform: translateX(-300%); }
     37.5% { transform: translateX(-400%); }
-
     45% { transform: translateX(-400%); }
     46.875% { transform: translateX(-500%); }
-
     54.375% { transform: translateX(-500%); }
     56.25% { transform: translateX(-600%); }
-
     63.75% { transform: translateX(-600%); }
     65.625% { transform: translateX(-700%); }
-
     73.125% { transform: translateX(-700%); }
     75% { transform: translateX(0%); }
-
     100% { transform: translateX(0%); }
 }
 
@@ -56,24 +52,25 @@
     font-family: poppins, serif;
     font-style: normal;
     text-align: center;
-    font-size: 1.8vw;
-    margin: 20px 0;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin: 1.5rem 0;
 }
 
 .contenedor-Locales{
-    margin-bottom: 3vh;
+    margin-bottom: 2rem;
     display: flex;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contLocal{
     align-items: center;
     text-align: center;
-    width: 33%;
+    width: 32vw;
     height: auto;
-    margin: 5px 50px;
-    border: 3px solid #571b02;
-    border-radius: 10%;
+    margin: 0.5rem 2rem;
+    border: 0.2rem solid #571b02;
+    border-radius: 1.5rem;
     object-fit: cover;
     overflow: hidden;
     display: flex;
@@ -97,19 +94,19 @@
 .infoLocales {
     font-family: poppins, serif;
     background-color: #fff;
-    padding: 10px;
+    padding: 0.7rem;
     transition: max-height 0.3s ease;
 }
 
 .ciudad {
     font-family: poppins, serif;
-    font-size: 2vw;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     font-weight: bold;
-    margin: 5px 0;
+    margin: 0.3rem 0;
 }
 
 .direccion {
-    font-size: 1.5vw;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.3s ease, max-height 0.3s ease;
@@ -128,6 +125,10 @@
     max-height: max-content;
 }
 
+.frase p, .frase b {
+    font-style: normal;
+    font-size: clamp(1rem, 1vw, 2rem);
+}
 
 @media (max-width: 900px) {
     .contenedor-Locales {
@@ -136,9 +137,9 @@
     }
 
     .contLocal {
-        width: 50%;
+        width: 40vw;
         height: auto;
-        margin-bottom: 5%;
+        margin-bottom: 2rem;
     }
 
     .contenedor-imagen {
@@ -155,15 +156,19 @@
     .direccion {
         opacity: 1;
         max-height: none;
-        font-size: 4vw;
+        font-size: clamp(1rem, 4vw, 2rem);
     }
 
     .contLocal p,
     .ciudad {
-        font-size: 4vw;
+        font-size: clamp(0.5rem, 2vw, 2rem);
     }
 
     .tituloLocales {
-        font-size: 3vw;
+        font-size: clamp(1.1rem, 5vw, 1rem);
+    }
+
+    .frase p, .frase b {
+        font-size: clamp(0.5rem, 2vw, 1rem);
     }
 }

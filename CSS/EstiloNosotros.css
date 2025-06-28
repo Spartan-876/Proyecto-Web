@@ -6,13 +6,14 @@ section {
     background-color: #ffffff;
     font-family: poppins, serif;
     padding: 3em 2em;
-    margin: 4em 8em;
+    margin: clamp(25vh,30vh, 100vw) 8em 4em 8em;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 -4px 12px rgba(0,0,0,0.08);
 }
 
 section>p{
     text-align: center;
+    font-size: 1.3vw;
 }
 
 .frase p, .frase b {
@@ -24,6 +25,7 @@ section>p{
     text-align: left;
     color: #222;
     margin-bottom: 0.5em;
+    font-size: 1.5vw;
 }
 
 .columna p {
@@ -31,6 +33,7 @@ section>p{
     color: black;
     line-height: 1.6;
     text-align: left;
+    font-size: 1.3vw;
 }
 
 .columna.texto.vision h1,
@@ -48,7 +51,6 @@ section>p{
 
 .columna {
     flex: 1 1 45%;
-    height: 40vh;
     overflow: hidden;
     align-content: center;
 }
@@ -63,7 +65,7 @@ section>p{
 
 @media (max-width: 900px) {
     section {
-        margin: 2em 3em;
+        margin: 11em 3em 2em 3em;
         padding: 2em 1em;
     }
 

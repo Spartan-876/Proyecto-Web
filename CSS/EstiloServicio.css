@@ -1,20 +1,19 @@
 body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f2f2f2;
+    margin-top: clamp(25vh,30vh, 100vw);
 }
 
 .frase p, .frase b {
-    font-size: 4vw !important;
+    font-size: 3vw !important;
 }
 
 section {
     background-color: #ffffff;
-    max-width: 70vw;
-    margin: 4em auto;
+    margin: 0 8em 4em 8em;
     padding: 3em 2em;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 -4px 12px rgba(0,0,0,0.08);
 }
 
 .contenedor-flex {
@@ -40,7 +39,7 @@ section {
 }
 
 .columna h1 {
-    font-size: 1.4em;
+    font-size: 1.5vw;
     color: #333;
     margin-bottom: 0.5em;
     font-weight: 600;
@@ -50,6 +49,7 @@ section {
     color: #555;
     font-weight: 300;
     margin-bottom: 1em;
+    font-size: 1.5vw;
 }
 
 
@@ -63,6 +63,7 @@ section {
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: left;
+    font-size: 1.5vw;
 }
 
 .boton:hover {
@@ -70,9 +71,12 @@ section {
 }
 
 @media (max-width: 900px){
+    body {
+        margin-top: clamp(22vh, 22vh, 20vw);
+    }
 
     section {
-        max-width: 70vw;
+        margin: 3em 2em;
         padding: 1.5em 1em;
     }
 

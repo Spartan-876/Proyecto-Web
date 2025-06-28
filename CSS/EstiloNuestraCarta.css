@@ -1,3 +1,6 @@
+body {
+    margin-top: clamp(10vh,23vh, 100vw);
+}
 
 .Contenedor-principal {
     text-align: center;
@@ -162,6 +165,9 @@
 }
 
 @media (max-width: 900px) {
+    body {
+        margin-top: clamp(20vh, 20vh, 50vw);
+    }
     .barra-busqueda {
         max-width: 50vw;
         margin: 1vw auto;
