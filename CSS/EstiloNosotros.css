@@ -2,22 +2,22 @@ body{
     background-color: #f2f2f2;
 }
 
-section {
+main {
     background-color: #ffffff;
     font-family: poppins, serif;
-    padding: 3em 2em;
-    margin: clamp(25vh,30vh, 100vw) 8em 4em 8em;
+    padding: 2em 3em 2em 3em;
+    margin: 3em 8em 4em 8em;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 -4px 12px rgba(0,0,0,0.08);
 }
 
-section>p{
+main>p{
     text-align: center;
     font-size: 1.3vw;
 }
 
 .frase p, .frase b {
-    font-size: 3vw !important;
+    font-size: 2.5vw !important;
 }
 
 .columna h1 {
@@ -64,12 +64,12 @@ section>p{
 }
 
 @media (max-width: 900px) {
-    section {
-        margin: 11em 3em 2em 3em;
+    main {
+        margin: 2em 3em 3em 3em;
         padding: 2em 1em;
     }
 
-    section p{
+    main p{
         font-size: 2vw;
     }
 

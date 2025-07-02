@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
     <!-- Estilos de pie de pagina-->
     <link rel="stylesheet" href="/CSS/EstiloPiePagina.css">
+    <!--  Codigo de JS -->
+	<script src="/JS/Encabezado.js"></script>
+    <script src="/JS/carta.js"></script>
 
     <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
 
@@ -19,7 +22,6 @@
 </head>
 <body>
 <header>
-
 
     <div class="encabezado">
         <div class="encabezado-izquierda">
@@ -57,19 +59,21 @@
     <div class="frase">
         <p class="frase-text">"Cada postre cuenta una historia... encuentra el tuyo."</p>
     </div>
+	<div class="barra-busqueda">
+        <input type="text" placeholder="Buscar...">
+        <button type="submit" onclick="location.href='Producto.html'">🔍</button>
+    </div>
 </header>
-
+<section>
+	<br>
+</section>
 <main>
 
     <div class="Contenedor-principal">
-        <div class="barra-busqueda">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit" onclick="location.href='Producto.html'">🔍</button>
-        </div>
+        
         <div class="catalogo">
             <div class="Categoria">
                 <h2>Categorias</h2>
-                <p>¡Novedades!</p>
                 <p>Combos</p>
                 <p>Tortas</p>
                 <p>Pie</p>
@@ -84,104 +88,46 @@
                 <p>otros...</p>
             </div>
             <div class="matrizProducto">
-                <div class="barra-filtro">
-                    <p class="Resultado">Mostrando 1-9 de 25 resultados</p>
-                    <p class="Ordenar">Ordenar por:</p>
-                    <select name="ordenamiento"  class="Lista">
-                        <option value="0"></option>
-                        <option value="1">Nombre</option>
-                        <option value="2">precio</option>
-                        <option value="3">Mas vendido </option>
-                    </select>
+                <div class="barra-filtro barra-filtro-pc">
+					<p class="Resultado">Nuestros productos</p>
+					<p class="Ordenar">Ordenar por:</p>
+					<select name="ordenamiento" class="Lista">
+					<option value="0"></option>
+					<option value="1">Nombre</option>
+					<option value="2">Precio</option>
+					</select>
+				</div>
+				<div class="barra-filtro barra-filtro-movil">
+					<p class="CategoriasTxt">Categorias:	</p>
+					<select name="categoria" class="Lista1">
+						<option value="">Todas las categorías</option>
+						<option value="Combos">Combos</option>
+						<option value="Tortas">Tortas</option>
+						<option value="Pie">Pie</option>
+						<option value="Empanadas">Empanadas</option>
+						<option value="Helados">Helados</option>
+						<option value="Postre helado">Postre helado</option>
+						<option value="Bocaditos dulces">Bocaditos dulces</option>
+						<option value="Bocaditos Salados">Bocaditos Salados</option>
+						<option value="Jugos y bebidas">Jugos y bebidas</option>
+						<option value="Bebidas calientes">Bebidas calientes</option>
+						<option value="Decoraciones">Decoraciones</option>
+						<option value="Otros">Otros...</option>
+					</select>
+					<p class="Ordenar">Ordenar por:</p>
+					<select name="ordenamiento" class="Lista2">
+						<option value="0"></option>
+						<option value="1">Nombre</option>
+						<option value="2">Precio</option>
+					</select>
+				</div>
+                <div class="grid-productos">
                 </div>
-                <div class="ProductosFila">
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/alfajores.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Alfajor</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/caracol.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Caracol</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/empanadas.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Empanadas</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ProductosFila">
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/niditosdeamor2.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Niditos de Amor</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/piedefresa.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Pie de Fresa</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/piedelimon.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Pie de Limón</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ProductosFila">
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/piedemanzana.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Pie de Manzana</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/sandwich.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Sandwich</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-producto">
-                        <div class="contenedor-imagen">
-                            <img src="/Material/Catalogo/tortadechocolate2.png" alt="">
-                        </div>
-                        <div class="info">
-                            <p class="nombre-producto">Torta de Chocolate</p>
-                            <p class="precio-producto">S/9.99</p>
-                        </div>
-                    </div>
+                <div class="boton-ver-mas">
+                    <button id="verMasBtn">Ver más</button>
                 </div>
             </div>
+            
         </div>
     </div>
 </main>
