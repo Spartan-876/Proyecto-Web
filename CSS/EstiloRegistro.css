@@ -23,6 +23,11 @@
     padding-right: 2rem;
 }
 
+.frase p, .frase b {
+    font-style: normal;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
 /* Inputs y textarea */
 .formulario input[type="text"],
 .formulario input[type="email"],
@@ -50,6 +55,8 @@
     cursor: pointer;
     align-self: center;
 }
+
+
 
 .linea-vertical {
     width: 3px;

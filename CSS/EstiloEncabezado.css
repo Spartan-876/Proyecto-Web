@@ -90,9 +90,14 @@ header {
     padding: 10px 0;
 }
 
-.frase p, .frase b {
+.frase p {
     font-style: normal;
-    font-size: 1.4vw;
+    font-size: 1rem;
+}
+
+.frase b {
+    font-style: normal;
+    font-size: 2rem;
 }
 
 .menu-icon {
@@ -142,7 +147,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 20%;
+    width: 25%;
     height: 100dvh;
     padding: 10px 0;
     z-index: 10;
@@ -212,7 +217,11 @@ header {
         display: none !important;
     }
 
-    .frase p, .frase b {
+    .frase p{
+        font-size: 1rem;
+    }
+
+    .frase b {
         font-size: 2vw;
     }
 
@@ -231,7 +240,7 @@ header {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 40%;
+        width: 50%;
         height: 100dvh;
         padding: 10px 0;
         z-index: 10;

@@ -101,15 +101,12 @@
     .Logo-Redes,
     .Contacto-horario,
     .ServicioCliente {
-        width: 50%;
+        width: 70%;
         margin: 5px 0;
         text-align: left;
         align-items: flex-start;
         display: flex;
         flex-direction: column;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        box-sizing: border-box;
     }
 
     .Logo-Redes {

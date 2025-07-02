@@ -17,10 +17,10 @@
   },
   {
     "id": "3",
-    "nombre": "Empanadas",
+    "nombre": "Empanadas de Pollo",
     "precio": 9.99,
     "imagen": "/Material/Catalogo/empanadas.png",
-    "categoria": "Bocaditos Salados",
+    "categoria": "Empanadas",
     "descripcion": "Empanadas tradicionales rellenas de carne y especias."
   },
   {
