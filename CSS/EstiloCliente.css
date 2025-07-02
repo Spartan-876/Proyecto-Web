@@ -1,17 +1,17 @@
-body {
-    margin-top: clamp(30vh,35vh, 100vw);
+section{
+    margin-bottom: 1em;
 }
 
 .Contenedor-Carrusel {
     position: relative;
     max-width: max-content;
-    max-height: 90vh;
-    margin: 10vh auto;
+    max-height: 80vh;
+    margin: 8vh auto 10vh auto;
     overflow: hidden;
 }
 
 .frase p, .frase b {
-    font-size: 4vw !important;
+    font-size: 2.5vw !important;
 }
 
 .carrusel {

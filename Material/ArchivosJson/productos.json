@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "nombre": "Alfajor",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/alfajores.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Clásico alfajor relleno de manjar blanco, espolvoreado con azúcar en polvo."
+  },
+  {
+    "id": "2",
+    "nombre": "Caracol",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/caracol.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Delicioso caracol de masa suave relleno de canela y azúcar."
+  },
+  {
+    "id": "3",
+    "nombre": "Empanadas",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/empanadas.png",
+    "categoria": "Bocaditos Salados",
+    "descripcion": "Empanadas tradicionales rellenas de carne y especias."
+  },
+  {
+    "id": "4",
+    "nombre": "Niditos de Amor",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/niditosdeamor2.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Suaves niditos rellenos de dulce de leche y coco."
+  },
+  {
+    "id": "5",
+    "nombre": "Pie de Fresa",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/piedefresa.png",
+    "categoria": "Pie",
+    "descripcion": "Base crocante con relleno de crema pastelera y fresas frescas."
+  },
+  {
+    "id": "6",
+    "nombre": "Pie de Limón",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/piedelimon.png",
+    "categoria": "Pie",
+    "descripcion": "Postre clásico con suave crema de limón y merengue."
+  },
+  {
+    "id": "7",
+    "nombre": "Pie de Manzana",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/piedemanzana.png",
+    "categoria": "Pie",
+    "descripcion": "Relleno de manzanas caramelizadas y toque de canela."
+  },
+  {
+    "id": "8",
+    "nombre": "Sandwich",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/sandwich.png",
+    "categoria": "Bocaditos Salados",
+    "descripcion": "Sándwich artesanal con jamón y queso."
+  },
+  {
+    "id": "9",
+    "nombre": "Torta de Chocolate",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/tortadechocolate2.png",
+    "categoria": "Tortas",
+    "descripcion": "Bizcocho húmedo de chocolate con cobertura cremosa."
+  },
+  {
+    "id": "10",
+    "nombre": "Helado de Vainilla",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/heladovainilla.png",
+    "categoria": "Helados",
+    "descripcion": "Helado artesanal de vainilla."
+  },
+  {
+    "id": "11",
+    "nombre": "Jugos Naturales",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/jugosnaturales.png",
+    "categoria": "Jugos y bebidas",
+    "descripcion": "Jugos frescos de frutas de estación."
+  },
+  {
+    "id": "12",
+    "nombre": "Café Americano",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/cafeamericano.png",
+    "categoria": "Bebidas calientes",
+    "descripcion": "Café americano recién preparado."
+  }
+]
