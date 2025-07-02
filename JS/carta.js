@@ -1,8 +1,8 @@
 // Variables globales
-let productosCargados = [];               // Todos los productos del JSON
-let productosFiltradosActuales = [];      // Productos filtrados activos
-let mostrados = 0;                         // Cuántos se están mostrando
-const cantidadPorCarga = 8;               // Número de productos por lote
+let productosCargados = [];              
+let productosFiltradosActuales = [];      
+let mostrados = 0;                         
+const cantidadPorCarga = 8;               
 const buscadorInput = document.getElementById("buscadorInput");
 const btnBuscar = document.getElementById("btnBuscar");
 
@@ -13,21 +13,17 @@ const verMasBtn = document.getElementById("verMasBtn");
 const selectCategoriaMovil = document.querySelector(".Lista1");
 const selectOrdenMovil = document.querySelector(".Lista2");
 
-// Cargar productos una sola vez
 fetch("/Material/ArchivosJson/productos.json")
   .then(response => response.json())
   .then(productos => {
     productosCargados = productos;
     mostrados = 0;
-    productosFiltradosActuales = []; // No hay filtro al inicio
+    productosFiltradosActuales = []; 
     cargarProductos();
   })
   .catch(error => console.error("Error al cargar productos:", error));
 
-// Función para crear una tarjeta
 
-
-// Botón Ver Más
 if (verMasBtn) {
   verMasBtn.addEventListener("click", () => {
     if (productosFiltradosActuales.length > 0) {
@@ -38,7 +34,6 @@ if (verMasBtn) {
   });
 }
 
-// Evento clic en categorías laterales
 document.querySelectorAll(".Categoria p").forEach(p => {
   p.addEventListener("click", e => {
     const categoria = e.target.textContent.trim();
@@ -46,12 +41,12 @@ document.querySelectorAll(".Categoria p").forEach(p => {
   });
 });
 
-// Eventos en selects móviles
 if (selectCategoriaMovil) {
   selectCategoriaMovil.addEventListener("change", () => {
     filtrarYOrdenar(selectCategoriaMovil.value);
   });
 }
+
 if (selectOrdenMovil) {
   selectOrdenMovil.addEventListener("change", () => {
     filtrarYOrdenar(selectCategoriaMovil.value);
@@ -74,12 +69,10 @@ if (buscadorInput) {
   });
 }
 
-
-// Función de filtrar y ordenar
 function filtrarYOrdenar(categoria) {
   let productosFiltrados = productosCargados.slice();
-
-  // Filtrar categoría
+  
+  // Filtrar por categoría  
   if (categoria && categoria.toLowerCase() !== "todos") {
     productosFiltrados = productosFiltrados.filter(p =>
       p.categoria.toLowerCase() === categoria.toLowerCase()

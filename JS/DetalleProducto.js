@@ -2,22 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
 const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
 if (!producto) return;
 
-// Imagen
 const imagenDiv = document.querySelector(".producto-imagen .imagen-placeholder");
 imagenDiv.innerHTML = `  
     <img src="${producto.imagen}" alt="${producto.nombre}">
 `;
 
-// Nombre
 document.querySelector(".producto-info h2").textContent = producto.nombre;
-
-// Precio
 document.querySelector(".producto-info .precio").textContent = `S/ ${producto.precio.toFixed(2)}`;
-
-// Descripción
 document.querySelector(".producto-info .descripcion").textContent = producto.descripcion || "Sin descripción.";
-
-// Categoría
 document.querySelector(".producto-info .valor").textContent = producto.categoria || "Sin categoría.";
 
 // Productos relacionados
