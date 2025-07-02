@@ -4,6 +4,10 @@
     padding: 2rem 1rem;
 }
 
+.frase p, .frase b {
+    font-style: normal;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
 
 .titulo-preguntas {
     text-align: center;

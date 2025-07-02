@@ -28,7 +28,7 @@ body {
     flex: 1;
     border: none;
     padding: 0.6rem 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
     outline: none;
 }
@@ -110,8 +110,10 @@ body {
 }
 
 .Lista {
+    font-family: poppins, serif;
+    font-size: 1rem;
+    border-radius: 1rem;
     padding: 0.4vw;
-    font-size: 0.9vw;
 }
 
 
@@ -205,6 +207,11 @@ body {
 }
 
 @media (max-width: 900px) {
+
+    .frasetxt {
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
     body {
         margin-top: clamp(20vh, 20vh, 50vw);
     }
@@ -224,7 +231,6 @@ body {
 
     .barra-busqueda input[type="text"] {
         width: 100%;
-        font-size: 1rem;
         padding: 0.4rem 1rem;
     }
 
@@ -242,17 +248,21 @@ body {
         display: none;
     }
     .barra-filtro-movil {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1em;
     }
 
-    .Ordenar{
-        flex: 1;
+    .Lista{
+        font-size: 0.7rem;
+        width: clamp(60%, 80%, 100%);
     }
 
-    .Lista2 , .Ordenar {
+    .Ordenar, .CategoriasTxt {
+        flex: 1;
         text-align: right;
     }
+
 
     .grid-productos {
     grid-template-columns: repeat(2, 1fr);

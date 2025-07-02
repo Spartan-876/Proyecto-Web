@@ -23,6 +23,13 @@ body {
     align-items: center;
 }
 
+.producto-imagen img {
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
 .imagen-placeholder {
     width: 320px;
     height: 320px;
@@ -141,6 +148,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.relacionado-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .relacionado-item p {

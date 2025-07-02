@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/CSS/EstiloPiePagina.css">
     <!--  Codigo de JS -->
 	<script src="/JS/Encabezado.js"></script>
-    <script src="/JS/carta.js"></script>
+    <script src="/JS/carta.js" defer></script>
 
     <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
 
@@ -60,8 +60,8 @@
         <p class="frase-text">"Cada postre cuenta una historia... encuentra el tuyo."</p>
     </div>
 	<div class="barra-busqueda">
-        <input type="text" placeholder="Buscar...">
-        <button type="submit" onclick="location.href='Producto.html'">🔍</button>
+        <input type="text" id="buscadorInput" placeholder="Buscar...">
+        <button type="submit" id="btnBuscar">🔍</button>
     </div>
 </header>
 <section>
@@ -74,6 +74,7 @@
         <div class="catalogo">
             <div class="Categoria">
                 <h2>Categorias</h2>
+				<p>Todos</p>
                 <p>Combos</p>
                 <p>Tortas</p>
                 <p>Pie</p>
@@ -91,15 +92,15 @@
                 <div class="barra-filtro barra-filtro-pc">
 					<p class="Resultado">Nuestros productos</p>
 					<p class="Ordenar">Ordenar por:</p>
-					<select name="ordenamiento" class="Lista">
+					<select name="ordenamiento" class="Lista Lista2">
 					<option value="0"></option>
-					<option value="1">Nombre</option>
-					<option value="2">Precio</option>
+					<option value="Nombre">Nombre</option>
+					<option value="Precio">Precio</option>
 					</select>
 				</div>
 				<div class="barra-filtro barra-filtro-movil">
 					<p class="CategoriasTxt">Categorias:	</p>
-					<select name="categoria" class="Lista1">
+					<select name="categoria" class="Lista Lista1">
 						<option value="">Todas las categorías</option>
 						<option value="Combos">Combos</option>
 						<option value="Tortas">Tortas</option>
@@ -115,10 +116,10 @@
 						<option value="Otros">Otros...</option>
 					</select>
 					<p class="Ordenar">Ordenar por:</p>
-					<select name="ordenamiento" class="Lista2">
+					<select name="ordenamiento" class="Lista Lista2">
 						<option value="0"></option>
-						<option value="1">Nombre</option>
-						<option value="2">Precio</option>
+						<option value="Nombre">Nombre</option>
+						<option value="Precio">Precio</option>
 					</select>
 				</div>
                 <div class="grid-productos">
