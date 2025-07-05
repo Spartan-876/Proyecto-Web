@@ -75,7 +75,7 @@
     "id": "10",
     "nombre": "Helado de Vainilla",
     "precio": 12.00,
-    "imagen": "/Material/Catalogo/heladovainilla.png",
+    "imagen": "/Material/Catalogo/heladoVainilla.png",
     "categoria": "Helados",
     "descripcion": "Helado artesanal de vainilla."
   },
@@ -83,7 +83,7 @@
     "id": "11",
     "nombre": "Jugos Naturales",
     "precio": 6.00,
-    "imagen": "/Material/Catalogo/jugosnaturales.png",
+    "imagen": "/Material/Catalogo/jugosNaturales.png",
     "categoria": "Jugos y bebidas",
     "descripcion": "Jugos frescos de frutas de estación."
   },
