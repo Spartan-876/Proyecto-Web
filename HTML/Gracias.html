@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Estilo de Encabezado-->
     <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
-    <!-- Estilos de pagina-->
-    <link rel="stylesheet" href="/CSS/EstiloRegistro.css">
-    <!-- JS de pagina -->
+    <!-- Estilo de pagina -->
+    <link rel="stylesheet" href="/CSS/EstiloGracias.css">
+
     <script src="/JS/Encabezado.js"></script>
-    <script src="/JS/Registro_modal.js"></script>
 
     <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
+    <title>Gracias</title>
 
-    <title>Registro de Usuario</title>
+
 </head>
-
-<header>
+<body>
+    <header>
     <div class="encabezado">
         <div class="encabezado-izquierda">
             <input type="checkbox" id="toggle-menu">
@@ -56,56 +57,17 @@
     <div class="frase">
         <p class="frase-text">"¿Tienes una idea dulce? Cuéntanos y nosotros te ayudamos a hacerla realidad.”</p>
     </div>
-</header>
+    </header>
 
-<main>
-    <div class="contenedor-principal">
-        <!-- Contenedor principal -->
-        <div class="contenedor-flex">
-
-            <!-- Formulario -->
-            <form class="formulario" id="formulario-pedidos" action="https://formsubmit.co/dulceantojitoweb@gmail.com" method="POST">
-
-                <label><strong>Nombre completo:</strong><br />
-                    <input type="text" name="nombre" placeholder="Nombres y apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras" required />
-                </label>
-
-                <label><strong>Teléfono:</strong><br />
-                    <input type="tel" name="telefono" placeholder="999999999" pattern="[0-9]{9}" required>
-                </label>
-
-                <div class="opciones-contacto">
-                    <label><input type="radio" name="contacto" value="Llamada" required /> Llamada</label>
-                    <label><input type="radio" name="contacto" value="Whatsapp" /> Whatsapp</label>
-                </div>
-
-                <label><strong>Correo:</strong><br />
-                    <input type="email" name="correo" placeholder="Correo" required />
-                </label>
-
-                <label><strong>Motivo:</strong><br />
-                    <input type="text" name="motivo" placeholder="Motivo de contacto" required />
-                </label>
-
-                <label><strong>Mensaje:</strong><br />
-                    <textarea name="mensaje" placeholder="Describe lo que buscas" rows="4" required></textarea>
-                </label>
-
-                <input type="hidden" name="_next" value="https://proyecto-web-pearl.vercel.app/Gracias.html">
-                <input type="hidden" name="_captcha" value="false">
-
-                <button type="submit" class="boton-enviar">
-                    Enviar
-                </button>
-            </form>
-            <!-- Línea vertical marrón -->
-            <div class="linea-vertical"></div>
-
-            <!-- Imagen de pastel -->
-            <div class="contenedor-imagen">
-                <img src="/Material/Icons/Logocompleto.png" alt="Dulce Antojito" />
+    <main>
+        <!-- Modal de confirmación -->
+        <div id="modalConfirmacion" class="modal">
+            <br>
+            <div class="modal-contenido">
+                <h2>¡Gracias por tu pedido!</h2>
+                <p>Hemos recibido tu información y te contactaremos pronto.</p>
+                <a href="/" class="btn-volver">Volver al inicio</a>
             </div>
-    </div>
-</main>
-
+        </div>
+</body>
 </html>
