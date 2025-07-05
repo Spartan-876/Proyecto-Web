@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
     <!-- Estilos de pagina-->
     <link rel="stylesheet" href="/CSS/EstiloRegistro.css">
-
+    <!-- JS de pagina -->
     <script src="/JS/Encabezado.js"></script>
+    <script src="/JS/Registro_modal.js"></script>
 
     <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
 
@@ -19,8 +20,6 @@
 </head>
 
 <header>
-
-
     <div class="encabezado">
         <div class="encabezado-izquierda">
             <input type="checkbox" id="toggle-menu">
@@ -65,38 +64,39 @@
         <div class="contenedor-flex">
 
             <!-- Formulario -->
-            <form class="formulario">
+            <form class="formulario" id="formulario-pedidos" action="https://formsubmit.co/dulceantojitoweb@gmail.com" method="POST">
+
                 <label><strong>Nombre completo:</strong><br />
-                    <input type="text" placeholder="Nombres y apellidos" />
+                    <input type="text" name="nombre" placeholder="Nombres y apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras" required />
                 </label>
 
                 <label><strong>Teléfono:</strong><br />
-                    <input type="text" placeholder="Teléfono" />
+                    <input type="tel" name="telefono" placeholder="999999999" pattern="[0-9]{9}" required>
                 </label>
 
                 <div class="opciones-contacto">
-                    <label><input type="radio" name="contacto" /> Llamada</label>
-                    <label><input type="radio" name="contacto" /> Whatsapp</label>
+                    <label><input type="radio" name="contacto" value="Llamada" required /> Llamada</label>
+                    <label><input type="radio" name="contacto" value="Whatsapp" /> Whatsapp</label>
                 </div>
 
                 <label><strong>Correo:</strong><br />
-                    <input type="email" placeholder="Correo" />
+                    <input type="email" name="correo" placeholder="Correo" required />
                 </label>
 
                 <label><strong>Motivo:</strong><br />
-                    <input type="text" placeholder="Motivo de contacto" />
+                    <input type="text" name="motivo" placeholder="Motivo de contacto" required />
                 </label>
 
                 <label><strong>Mensaje:</strong><br />
-                    <textarea placeholder="Describe lo que buscas" rows="4"></textarea>
+                    <textarea name="mensaje" placeholder="Describe lo que buscas" rows="4" required></textarea>
                 </label>
 
-                <!-- Botón enviar-->
+                <input type="hidden" name="_captcha" value="true">
+
                 <button type="submit" class="boton-enviar">
                     Enviar
                 </button>
             </form>
-
             <!-- Línea vertical marrón -->
             <div class="linea-vertical"></div>
 
@@ -104,7 +104,15 @@
             <div class="contenedor-imagen">
                 <img src="/Material/Icons/Logocompleto.png" alt="Dulce Antojito" />
             </div>
-        </div>
+
+            <!-- Modal -->
+            <div id="modalConfirmacion" class="modal">
+                <div class="modal-contenido">
+                    <span class="modal-cerrar">&times;</span>
+                    <h2>¡Gracias por tu pedido!</h2>
+                    <p>Hemos recibido tu información y te contactaremos pronto.</p>
+                </div>
+            </div>
     </div>
 </main>
 
