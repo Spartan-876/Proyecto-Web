@@ -21,7 +21,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     formulario.addEventListener("submit", (e) => {
         e.preventDefault(); 
-        mostrarModal();
-        formulario.reset();
+
+        const formData = new FormData(formulario);
+
+        fetch(formulario.action, {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                mostrarModal();
+                formulario.reset();
+            } else {
+                alert("Ocurrió un error al enviar el formulario.");
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            alert("No se pudo enviar el formulario.");
+        });
     });
 });
