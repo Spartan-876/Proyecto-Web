@@ -214,6 +214,7 @@ header {
 
     .boton-pide,
     .icon-registro {
+        font-size: 1rem;
         display: none !important;
     }
 
@@ -240,7 +241,7 @@ header {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 50%;
+        width: 60%;
         height: 100dvh;
         padding: 10px 0;
         z-index: 10;
@@ -251,11 +252,11 @@ header {
     .navegacion-extra2 a{
         font-family: poppins, sans-serif;
         color: white;
+        font-size: clamp(1rem, 3vw, 2rem);
         text-decoration: none;
         font-weight: bold;
         margin-left: 10%;
         margin-bottom: 5%;
-        font-size: 2.5vw;
     }
     .navegacion-extra2 .boton-pide,
     .navegacion-extra2 .icon-registro {
@@ -264,16 +265,14 @@ header {
         width: auto;
     }
     .navegacion-extra2 .icon-registro {
-        width: 8vw;
-        max-width: 8vw;
-        min-width: 4vw;
+        width: clamp(25%, 5vw, 10rem);
         height: auto;
         margin: 0 auto 10px auto;
         display: block !important;
     }
     .navegacion-extra2 .boton-pide {
+        font-size: clamp(1rem, 3vw, 2rem);
         padding: 1vw 3vw;
-        font-size: 2.2vw;
         border-radius: 1vw;
         margin: 0 auto 2vw auto;
         display: block !important;
