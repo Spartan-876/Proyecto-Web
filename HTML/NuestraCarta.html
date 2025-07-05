@@ -75,7 +75,6 @@
             <div class="Categoria">
                 <h2>Categorias</h2>
 				<p>Todos</p>
-                <p>Combos</p>
                 <p>Tortas</p>
                 <p>Pie</p>
                 <p>Empanadas</p>
@@ -86,23 +85,23 @@
                 <p>Jugos y bebidas</p>
                 <p>Bebidas calientes</p>
                 <p>Decoraciones</p>
-                <p>otros...</p>
             </div>
             <div class="matrizProducto">
                 <div class="barra-filtro barra-filtro-pc">
 					<p class="Resultado">Nuestros productos</p>
 					<p class="Ordenar">Ordenar por:</p>
 					<select name="ordenamiento" class="Lista Lista2">
-					<option value="0"></option>
-					<option value="Nombre">Nombre</option>
-					<option value="Precio">Precio</option>
+					    <option value="0"></option>
+					    <option value="nombre-asc">Nombre A-Z</option>
+                        <option value="nombre-desc">Nombre Z-A</option>
+						<option value="precio-asc">Precio ASC</option>
+                        <option value="precio-desc">Precio DESC</option>
 					</select>
 				</div>
 				<div class="barra-filtro barra-filtro-movil">
 					<p class="CategoriasTxt">Categorias:	</p>
 					<select name="categoria" class="Lista Lista1">
 						<option value="">Todas las categorías</option>
-						<option value="Combos">Combos</option>
 						<option value="Tortas">Tortas</option>
 						<option value="Pie">Pie</option>
 						<option value="Empanadas">Empanadas</option>
@@ -113,13 +112,14 @@
 						<option value="Jugos y bebidas">Jugos y bebidas</option>
 						<option value="Bebidas calientes">Bebidas calientes</option>
 						<option value="Decoraciones">Decoraciones</option>
-						<option value="Otros">Otros...</option>
 					</select>
 					<p class="Ordenar">Ordenar por:</p>
 					<select name="ordenamiento" class="Lista Lista2">
 						<option value="0"></option>
-						<option value="Nombre">Nombre</option>
-						<option value="Precio">Precio</option>
+						<option value="nombre-asc">Nombre A-Z</option>
+                        <option value="nombre-desc">Nombre Z-A</option>
+						<option value="precio-asc">Precio ASC</option>
+                        <option value="precio-desc">Precio DESC</option>
 					</select>
 				</div>
                 <div class="grid-productos">
@@ -128,7 +128,6 @@
                     <button id="verMasBtn">Ver más</button>
                 </div>
             </div>
-            
         </div>
     </div>
 </main>

@@ -2,7 +2,7 @@
   {
     "id": "1",
     "nombre": "Alfajor",
-    "precio": 9.99,
+    "precio": 2.50,
     "imagen": "/Material/Catalogo/alfajores.png",
     "categoria": "Bocaditos dulces",
     "descripcion": "Clásico alfajor relleno de manjar blanco, espolvoreado con azúcar en polvo."
@@ -10,15 +10,15 @@
   {
     "id": "2",
     "nombre": "Caracol",
-    "precio": 9.99,
+    "precio": 2.50,
     "imagen": "/Material/Catalogo/caracol.png",
     "categoria": "Bocaditos dulces",
     "descripcion": "Delicioso caracol de masa suave relleno de canela y azúcar."
   },
   {
     "id": "3",
-    "nombre": "Empanadas de Pollo",
-    "precio": 9.99,
+    "nombre": "Empanadas Tradicionales",
+    "precio": 3.00,
     "imagen": "/Material/Catalogo/empanadas.png",
     "categoria": "Empanadas",
     "descripcion": "Empanadas tradicionales rellenas de carne y especias."
@@ -26,7 +26,7 @@
   {
     "id": "4",
     "nombre": "Niditos de Amor",
-    "precio": 9.99,
+    "precio": 0.50,
     "imagen": "/Material/Catalogo/niditosdeamor2.png",
     "categoria": "Bocaditos dulces",
     "descripcion": "Suaves niditos rellenos de dulce de leche y coco."
@@ -34,7 +34,7 @@
   {
     "id": "5",
     "nombre": "Pie de Fresa",
-    "precio": 9.99,
+    "precio": 5.00,
     "imagen": "/Material/Catalogo/piedefresa.png",
     "categoria": "Pie",
     "descripcion": "Base crocante con relleno de crema pastelera y fresas frescas."
@@ -42,7 +42,7 @@
   {
     "id": "6",
     "nombre": "Pie de Limón",
-    "precio": 9.99,
+    "precio": 5.00,
     "imagen": "/Material/Catalogo/piedelimon.png",
     "categoria": "Pie",
     "descripcion": "Postre clásico con suave crema de limón y merengue."
@@ -50,7 +50,7 @@
   {
     "id": "7",
     "nombre": "Pie de Manzana",
-    "precio": 9.99,
+    "precio": 5.00,
     "imagen": "/Material/Catalogo/piedemanzana.png",
     "categoria": "Pie",
     "descripcion": "Relleno de manzanas caramelizadas y toque de canela."
@@ -58,15 +58,15 @@
   {
     "id": "8",
     "nombre": "Sandwich",
-    "precio": 9.99,
+    "precio": 3.00,
     "imagen": "/Material/Catalogo/sandwich.png",
     "categoria": "Bocaditos Salados",
     "descripcion": "Sándwich artesanal con jamón y queso."
   },
   {
     "id": "9",
-    "nombre": "Torta de Chocolate",
-    "precio": 9.99,
+    "nombre": "Porcion de torta de Chocolate",
+    "precio": 4.00,
     "imagen": "/Material/Catalogo/tortadechocolate2.png",
     "categoria": "Tortas",
     "descripcion": "Bizcocho húmedo de chocolate con cobertura cremosa."
@@ -74,7 +74,7 @@
   {
     "id": "10",
     "nombre": "Helado de Vainilla",
-    "precio": 9.99,
+    "precio": 12.00,
     "imagen": "/Material/Catalogo/heladovainilla.png",
     "categoria": "Helados",
     "descripcion": "Helado artesanal de vainilla."
@@ -82,7 +82,7 @@
   {
     "id": "11",
     "nombre": "Jugos Naturales",
-    "precio": 9.99,
+    "precio": 6.00,
     "imagen": "/Material/Catalogo/jugosnaturales.png",
     "categoria": "Jugos y bebidas",
     "descripcion": "Jugos frescos de frutas de estación."
@@ -90,9 +90,337 @@
   {
     "id": "12",
     "nombre": "Café Americano",
-    "precio": 9.99,
-    "imagen": "/Material/Catalogo/cafeamericano.png",
+    "precio": 3.50,
+    "imagen": "/Material/Catalogo/cafe.png",
     "categoria": "Bebidas calientes",
     "descripcion": "Café americano recién preparado."
+  },
+  {
+    "id": "13",
+    "nombre": "Café",
+    "precio": 3.50,
+    "imagen": "/Material/Catalogo/cafee.png",
+    "categoria": "Bebidas calientes",
+    "descripcion": "Café caliente recién hecho."
+  },
+  {
+    "id": "14",
+    "nombre": "Cappuccino",
+    "precio": 12.99,
+    "imagen": "/Material/Catalogo/cappuccino.png",
+    "categoria": "Bebidas calientes",
+    "descripcion": "Cappuccino cremoso con espuma de leche."
+  },
+  {
+    "id": "15",
+    "nombre": "Manzanilla",
+    "precio": 7.99,
+    "imagen": "/Material/Catalogo/manzanilla.png",
+    "categoria": "Bebidas calientes",
+    "descripcion": "Infusión de manzanilla natural."
+  },
+  {
+    "id": "16",
+    "nombre": "Té",
+    "precio": 7.99,
+    "imagen": "/Material/Catalogo/té.png",
+    "categoria": "Bebidas calientes",
+    "descripcion": "Té tradicional caliente."
+  },
+  {
+    "id": "17",
+    "nombre": "Té Limón",
+    "precio": 8.99,
+    "imagen": "/Material/Catalogo/te_limon.png",
+    "categoria": "Bebidas calientes",
+    "descripcion": "Té con un toque de limón."
+  },
+  {
+    "id": "18",
+    "nombre": "Mini Brownies",
+    "precio": 5.99,
+    "imagen": "/Material/Catalogo/mini_brownies.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Mini brownies de chocolate suave."
+  },
+  {
+    "id": "19",
+    "nombre": "Pionono",
+    "precio": 6.99,
+    "imagen": "/Material/Catalogo/pionono.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Pionono dulce relleno."
+  },
+  {
+    "id": "20",
+    "nombre": "Profiteroles",
+    "precio": 7.99,
+    "imagen": "/Material/Catalogo/profiteroles.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Deliciosos profiteroles rellenos de crema."
+  },
+  {
+    "id": "21",
+    "nombre": "Suspiro Limeña",
+    "precio": 8.99,
+    "imagen": "/Material/Catalogo/Suspiro_Limeña.png",
+    "categoria": "Bocaditos dulces",
+    "descripcion": "Tradicional suspiro a la limeña."
+  },
+  {
+    "id": "22",
+    "nombre": "Alitas",
+    "precio": 15.99,
+    "imagen": "/Material/Catalogo/alitas.png",
+    "categoria": "Bocaditos salados",
+    "descripcion": "Alitas crocantes con salsa especial."
+  },
+  {
+    "id": "23",
+    "nombre": "Brochetas",
+    "precio": 12.99,
+    "imagen": "/Material/Catalogo/brochetas.png",
+    "categoria": "Bocaditos salados",
+    "descripcion": "Brochetas variadas recién preparadas."
+  },
+  {
+    "id": "24",
+    "nombre": "Tequeños",
+    "precio": 10.99,
+    "imagen": "/Material/Catalogo/tequeños.png",
+    "categoria": "Bocaditos salados",
+    "descripcion": "Tequeños rellenos de queso."
+  },
+  {
+    "id": "25",
+    "nombre": "Vela Champagne",
+    "precio": 4.99,
+    "imagen": "/Material/Catalogo/vela_champagne.png",
+    "categoria": "Decoraciones",
+    "descripcion": "Vela decorativa estilo champagne."
+  },
+  {
+    "id": "26",
+    "nombre": "Vela FC",
+    "precio": 4.99,
+    "imagen": "/Material/Catalogo/vela_FC.png",
+    "categoria": "Decoraciones",
+    "descripcion": "Vela con diseño especial FC."
+  },
+  {
+    "id": "27",
+    "nombre": "Vela Volcán",
+    "precio": 5.99,
+    "imagen": "/Material/Catalogo/vela_volcan.png",
+    "categoria": "Decoraciones",
+    "descripcion": "Vela volcán para decoraciones."
+  },
+  {
+    "id": "28",
+    "nombre": "Velas Doradas",
+    "precio": 3.99,
+    "imagen": "/Material/Catalogo/velas_doradas.png",
+    "categoria": "Decoraciones",
+    "descripcion": "Pack de velas doradas."
+  },
+  {
+    "id": "29",
+    "nombre": "Velas Lila",
+    "precio": 3.99,
+    "imagen": "/Material/Catalogo/velas_lila.png",
+    "categoria": "Decoraciones",
+    "descripcion": "Pack de velas color lila."
+  },
+  {
+    "id": "30",
+    "nombre": "Velas Nube",
+    "precio": 3.99,
+    "imagen": "/Material/Catalogo/velas_nube.png",
+    "categoria": "Decoraciones",
+    "descripcion": "Velas decorativas nube."
+  },
+  {
+    "id": "31",
+    "nombre": "Empanadas Surtidas",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/empanadas2.png",
+    "categoria": "Empanadas",
+    "descripcion": "Empanadas surtidas recién horneadas."
+  },
+  {
+    "id": "32",
+    "nombre": "Empanada de Carne",
+    "precio": 10.99,
+    "imagen": "/Material/Catalogo/empanadasCarne.png",
+    "categoria": "Empanadas",
+    "descripcion": "Empanadas rellenas de carne."
+  },
+  {
+    "id": "33",
+    "nombre": "Empanada de Pollo",
+    "precio": 10.99,
+    "imagen": "/Material/Catalogo/empanadasPollo.png",
+    "categoria": "Empanadas",
+    "descripcion": "Empanadas rellenas de pollo."
+  },
+  {
+    "id": "34",
+    "nombre": "Helado de Arándanos",
+    "precio": 8.99,
+    "imagen": "/Material/Catalogo/heladoArandanos.png",
+    "categoria": "Helados",
+    "descripcion": "Helado artesanal de arándanos."
+  },
+  {
+    "id": "35",
+    "nombre": "Helado de Fresa",
+    "precio": 8.99,
+    "imagen": "/Material/Catalogo/heladoFresa.png",
+    "categoria": "Helados",
+    "descripcion": "Helado artesanal de fresa."
+  },
+  {
+    "id": "36",
+    "nombre": "Helado de Oreo",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/heladoOreo.png",
+    "categoria": "Helados",
+    "descripcion": "Helado con trozos de galleta Oreo."
+  },
+  {
+    "id": "37",
+    "nombre": "Helados Variados",
+    "precio": 12.99,
+    "imagen": "/Material/Catalogo/helados.png",
+    "categoria": "Helados",
+    "descripcion": "Pack surtido de helados."
+  },
+  {
+    "id": "38",
+    "nombre": "Batido de Fresa",
+    "precio": 7.99,
+    "imagen": "/Material/Catalogo/batido_fresa.png",
+    "categoria": "Jugos y bebidas",
+    "descripcion": "Batido natural de fresa."
+  },
+  {
+    "id": "39",
+    "nombre": "Chicha Morada",
+    "precio": 6.99,
+    "imagen": "/Material/Catalogo/ChichaMorada.png",
+    "categoria": "Jugos y bebidas",
+    "descripcion": "Tradicional chicha morada."
+  },
+  {
+    "id": "40",
+    "nombre": "Jugo de Mango",
+    "precio": 6.99,
+    "imagen": "/Material/Catalogo/jugo_Mango.png",
+    "categoria": "Jugos y bebidas",
+    "descripcion": "Jugo natural de mango."
+  },
+  {
+    "id": "41",
+    "nombre": "Jugo de Naranja",
+    "precio": 5.99,
+    "imagen": "/Material/Catalogo/jugo_naranja.png",
+    "categoria": "Jugos y bebidas",
+    "descripcion": "Jugo de naranja recién exprimido."
+  },
+  {
+    "id": "42",
+    "nombre": "Pie de Manzana",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/pieManzana.png",
+    "categoria": "Pie",
+    "descripcion": "Pie casero de manzana."
+  },
+  {
+    "id": "43",
+    "nombre": "Pie de Mora",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/pieMora.png",
+    "categoria": "Pie",
+    "descripcion": "Pie casero de mora."
+  },
+  {
+    "id": "44",
+    "nombre": "Pie de Limón",
+    "precio": 9.99,
+    "imagen": "/Material/Catalogo/piLimon.png",
+    "categoria": "Pie",
+    "descripcion": "Pie casero de limón."
+  },
+  {
+    "id": "45",
+    "nombre": "Banana Split",
+    "precio": 11.99,
+    "imagen": "/Material/Catalogo/bananaSplit.png",
+    "categoria": "Postre helado",
+    "descripcion": "Banana Split con helado y salsa."
+  },
+  {
+    "id": "46",
+    "nombre": "Cheesecake de Mango",
+    "precio": 10.99,
+    "imagen": "/Material/Catalogo/cheesecake_Mango.png",
+    "categoria": "Postre helado",
+    "descripcion": "Cheesecake frío de mango."
+  },
+  {
+    "id": "47",
+    "nombre": "Cheesecake de Maracuyá",
+    "precio": 10.99,
+    "imagen": "/Material/Catalogo/cheesecake_maracuya.png",
+    "categoria": "Postre helado",
+    "descripcion": "Cheesecake frío de maracuyá."
+  },
+  {
+    "id": "48",
+    "nombre": "Cheesecake de Fresa",
+    "precio": 10.99,
+    "imagen": "/Material/Catalogo/CheesecakeFresa.png",
+    "categoria": "Postre helado",
+    "descripcion": "Cheesecake frío de fresa."
+  },
+  {
+    "id": "49",
+    "nombre": "Sándwich Helado",
+    "precio": 8.99,
+    "imagen": "/Material/Catalogo/sadwich_helado.png",
+    "categoria": "Postre helado",
+    "descripcion": "Sándwich relleno de helado."
+  },
+  {
+    "id": "50",
+    "nombre": "Torta Tres Leches",
+    "precio": 12.99,
+    "imagen": "/Material/Catalogo/torta3Leches.png",
+    "categoria": "Postre helado",
+    "descripcion": "Torta tres leches fría."
+  },
+  {
+    "id": "51",
+    "nombre": "Torta de Chocolate",
+    "precio": 13.99,
+    "imagen": "/Material/Catalogo/TortaChocolate.png",
+    "categoria": "Tortas",
+    "descripcion": "Torta esponjosa de chocolate."
+  },
+  {
+    "id": "52",
+    "nombre": "Torta de Mocca",
+    "precio": 13.99,
+    "imagen": "/Material/Catalogo/TortaDeMocca.png",
+    "categoria": "Tortas",
+    "descripcion": "Torta suave de mocca."
+  },
+  {
+    "id": "53",
+    "nombre": "Torta de Maracuyá",
+    "precio": 13.99,
+    "imagen": "/Material/Catalogo/TortaMaracuya.png",
+    "categoria": "Tortas",
+    "descripcion": "Torta esponjosa de maracuyá."
   }
 ]
