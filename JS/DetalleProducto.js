@@ -41,4 +41,54 @@ document.addEventListener("DOMContentLoaded", () => {
             relacionadosGrid.appendChild(div);
             });
         });
+
+    // Modal y carrito
+    const btnComprar = document.getElementById("btnComprar");
+    const modal = document.getElementById("modalCarrito");
+    const modalContenido = document.getElementById("modalContenido");
+    const btnSeguirComprando = document.getElementById("btnSeguirComprando");
+    const btnIrCarrito = document.getElementById("btnIrCarrito");
+
+    if (btnComprar) {
+        btnComprar.addEventListener("click", () => {
+        let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        const index = carrito.findIndex(item => item.id === producto.id);
+
+        if (index !== -1) {
+            carrito[index].cantidad += 1;
+        } else {
+            carrito.push({
+            id: producto.id,
+            nombre: producto.nombre,
+            imagen: producto.imagen,
+            precio: producto.precio,
+            cantidad: 1
+            });
+        }
+
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        mostrarModalConfirmacion();
+        });
+    }
+
+    function mostrarModalConfirmacion() {
+        modalContenido.innerHTML = `
+        <p><strong>${producto.nombre}</strong> se agregó al carrito.</p>
+        `;
+        modal.style.display = "block";
+    }
+
+    btnSeguirComprando.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    btnIrCarrito.addEventListener("click", () => {
+        window.location.href = "CarroCompras.html";
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+        modal.style.display = "none";
+        }
+    });
 });

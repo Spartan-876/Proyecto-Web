@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Estilo de Encabezado-->
     <link rel="stylesheet" href="/CSS/EstiloEncabezado.css">
-    <!-- Estilos de pagina-->
-    <link rel="stylesheet" href="/CSS/EstiloServicio.css">
     <!-- Estilos de pie de pagina-->
     <link rel="stylesheet" href="/CSS/EstiloPiePagina.css">
+    <!-- Estilo de Pagina -->
+    <link rel="stylesheet" href="/CSS/EstiloCarroCompras.css">
     
+
     <script src="/JS/Encabezado.js"></script>
+    <script src="/JS/CarroCompras.js"></script>
+    
 
     <link rel="icon" href="/Material/Icons/Logocompleto.png" type="image/x-icon" />
 
-    <title>Servicios</title>
+    <title>Compras</title>
 </head>
 <body>
-
     <header>
-
-
         <div class="encabezado">
             <div class="encabezado-izquierda">
                 <input type="checkbox" id="toggle-menu">
@@ -58,54 +58,26 @@
             </div>
         </div>
         <div class="frase">
-            <p class="frase-text"><b>Nuestros Servicios</b></p>
+            <p class="frase-text"><b>Carro de Compras</b></p>
         </div>
     </header>
 
-    <section>
-        <br>
-    </section>
-    
     <main>
-
-        <div class="contenedor-flex">
-            <div class="columna imagen">
-                <img src="/Material/otros/servicio.jpg" alt="Servicio 1" />
-            </div>
-            <div class="columna servicio1">
-                <h1>Pasteles personalizados</h1>
-                <p>
-                    Pasteles personalizados para toda ocasión, con variedad de sabores, rellenos y diseños. Elaborados
-                    artesanalmente con ingredientes frescos, cuidando cada detalle para que sean tan bonitos como deliciosos.
-                </p>
-                <button class="boton" onclick="location.href='Registro.html'">Ordena aquí</button>
-            </div>
-
-            <div class="columna servicio2">
-                <h1>Mesas de bocaditos</h1>
-                <p>
-                    Montaje completo de mesas dulces y saladas para eventos, con mini postres, bocaditos y decoración temática.
-                    Una experiencia visual y de sabor que hará brillar cualquier celebración.
-                </p>
-                <button class="boton" onclick="location.href='Registro.html'">Ordena aquí</button>
-            </div>
-            <div class="columna imagen">
-                <img src="/Material/otros/servicio2.jpg" alt="Servicio 2" />
-            </div>
-
-            <div class="columna imagen">
-                <img src="/Material/otros/servicio3.jpg" alt="Servicio 3" />
-            </div>
-
-            <div class="columna servicio3">
-                <h1> Venta de postres</h1>
-                <p>
-                    Postres artesanales listos para llevar: cheesecakes, brownies, flanes y más. Perfectos para darte un
-                    gusto, compartir o sorprender a alguien especial.
-                </p>
-                <button class="boton" onclick="location.href='Registro.html'">Ordena aquí</button>
+        <div class="carrito-contenedor">
+            <div id="carrito-items"></div>
+            <div class="carrito-total">
+                <p id="total">Total: S/ 0.00</p>
+                <button id="btnFinalizarCompra">Finalizar compra</button>
             </div>
         </div>
+        <div id="modalMensaje" class="modal">
+        <div class="modal-contenido">
+            <p id="modalMensajeTexto"></p>
+            <button id="modalMensajeCerrar">Cerrar</button>
+        </div>
+        </div>
+
+
     </main>
 
     <footer>
