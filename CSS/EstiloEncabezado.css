@@ -3,13 +3,23 @@
     padding: 0;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 header {
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 

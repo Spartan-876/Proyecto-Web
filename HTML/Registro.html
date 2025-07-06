@@ -18,94 +18,96 @@
 
     <title>Registro de Usuario</title>
 </head>
-
-<header>
-    <div class="encabezado">
-        <div class="encabezado-izquierda">
-            <input type="checkbox" id="toggle-menu">
-            <label for="toggle-menu" class="menu-icon">
-                <img src="/Material/Icons/menu.jpg" class="menu" alt="Menú"/>
-            </label>
-            <nav class="navegacion">
-                <a href="NuestraCarta.html">Nuestra carta</a>
-            </nav>
-            <nav class="navegacion-extra">
-                <a href="Nosotros.html">Nosotros</a>
-                <a href="Servicios.html">Servicios</a>
-                <a href="Clientes.html">Clientes satisfechos</a>
-            </nav>
-            <nav class="navegacion-extra2">
-                <img src="/Material/Icons/user.png" class="icon-registro" alt="Perfil"/>
-                <button class="boton-pide" onclick="location.href='Registro.html'">¡Pide aquí!</button>
-                <a href="NuestraCarta.html">Nuestra carta</a>
-                <a href="Nosotros.html">Nosotros</a>
-                <a href="Servicios.html">Servicios</a>
-                <a href="Clientes.html">Clientes satisfechos</a>
-            </nav>
-        </div>
-        <div class="encabezado-centro">
-            <a href="../index.html" class="logo-a">
-                <img src="/Material/Icons/logo-encabezado.png" class="logo" alt="">
-            </a>
-        </div>
-        <div class="encabezado-derecha">
-            <button class="boton-pide" onclick="location.href='Registro.html'">¡Pide aquí!</button>
-            <img src="/Material/Icons/user.png" class="icon-registro" alt=""/>
-        </div>
-    </div>
-    <div class="frase">
-        <p class="frase-text">"¿Tienes una idea dulce? Cuéntanos y nosotros te ayudamos a hacerla realidad.”</p>
-    </div>
-</header>
-
-<main>
-    <div class="contenedor-principal">
-        <!-- Contenedor principal -->
-        <div class="contenedor-flex">
-
-            <!-- Formulario -->
-            <form class="formulario" id="formulario-pedidos" action="https://formsubmit.co/dulceantojitoweb@gmail.com" method="POST">
-
-                <label><strong>Nombre completo:</strong><br />
-                    <input type="text" name="nombre" placeholder="Nombres y apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras" required />
+<body>
+    
+    <header>
+        <div class="encabezado">
+            <div class="encabezado-izquierda">
+                <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu" class="menu-icon">
+                    <img src="/Material/Icons/menu.jpg" class="menu" alt="Menú"/>
                 </label>
-
-                <label><strong>Teléfono:</strong><br />
-                    <input type="tel" name="telefono" placeholder="999999999" pattern="[0-9]{9}" required>
-                </label>
-
-                <div class="opciones-contacto">
-                    <label><input type="radio" name="contacto" value="Llamada" required /> Llamada</label>
-                    <label><input type="radio" name="contacto" value="Whatsapp" /> Whatsapp</label>
-                </div>
-
-                <label><strong>Correo:</strong><br />
-                    <input type="email" name="correo" placeholder="Correo" required />
-                </label>
-
-                <label><strong>Motivo:</strong><br />
-                    <input type="text" name="motivo" placeholder="Motivo de contacto" required />
-                </label>
-
-                <label><strong>Mensaje:</strong><br />
-                    <textarea name="mensaje" placeholder="Describe lo que buscas" rows="4" required></textarea>
-                </label>
-
-                <input type="hidden" name="_next" value="https://proyecto-web-pearl.vercel.app/HTML/Gracias.html">
-                <input type="hidden" name="_captcha" value="false">
-
-                <button type="submit" class="boton-enviar">
-                    Enviar
-                </button>
-            </form>
-            <!-- Línea vertical marrón -->
-            <div class="linea-vertical"></div>
-
-            <!-- Imagen de pastel -->
-            <div class="contenedor-imagen">
-                <img src="/Material/Icons/Logocompleto.png" alt="Dulce Antojito" />
+                <nav class="navegacion">
+                    <a href="NuestraCarta.html">Nuestra carta</a>
+                </nav>
+                <nav class="navegacion-extra">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Servicios.html">Servicios</a>
+                    <a href="Clientes.html">Clientes satisfechos</a>
+                </nav>
+                <nav class="navegacion-extra2">
+                    <img src="/Material/Icons/user.png" class="icon-registro" alt="Perfil"/>
+                    <button class="boton-pide" onclick="location.href='Registro.html'">¡Pide aquí!</button>
+                    <a href="NuestraCarta.html">Nuestra carta</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Servicios.html">Servicios</a>
+                    <a href="Clientes.html">Clientes satisfechos</a>
+                </nav>
             </div>
-    </div>
-</main>
+            <div class="encabezado-centro">
+                <a href="../index.html" class="logo-a">
+                    <img src="/Material/Icons/logo-encabezado.png" class="logo" alt="">
+                </a>
+            </div>
+            <div class="encabezado-derecha">
+                <button class="boton-pide" onclick="location.href='Registro.html'">¡Pide aquí!</button>
+                <img src="/Material/Icons/user.png" class="icon-registro" alt=""/>
+            </div>
+        </div>
+        <div class="frase">
+            <p class="frase-text">"¿Tienes una idea dulce? Cuéntanos y nosotros te ayudamos a hacerla realidad.”</p>
+        </div>
+    </header>
 
+    <main>
+        <div class="contenedor-principal">
+            <!-- Contenedor principal -->
+            <div class="contenedor-flex">
+
+                <!-- Formulario -->
+                <form class="formulario" id="formulario-pedidos" action="https://formsubmit.co/dulceantojitoweb@gmail.com" method="POST">
+
+                    <label><strong>Nombre completo:</strong><br />
+                        <input type="text" name="nombre" placeholder="Nombres y apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras" required />
+                    </label>
+
+                    <label><strong>Teléfono:</strong><br />
+                        <input type="tel" name="telefono" placeholder="999999999" pattern="[0-9]{9}" required>
+                    </label>
+
+                    <div class="opciones-contacto">
+                        <label><input type="radio" name="contacto" value="Llamada" required /> Llamada</label>
+                        <label><input type="radio" name="contacto" value="Whatsapp" /> Whatsapp</label>
+                    </div>
+
+                    <label><strong>Correo:</strong><br />
+                        <input type="email" name="correo" placeholder="Correo" required />
+                    </label>
+
+                    <label><strong>Motivo:</strong><br />
+                        <input type="text" name="motivo" placeholder="Motivo de contacto" required />
+                    </label>
+
+                    <label><strong>Mensaje:</strong><br />
+                        <textarea name="mensaje" placeholder="Describe lo que buscas" rows="4" required></textarea>
+                    </label>
+
+                    <input type="hidden" name="_next" value="https://proyecto-web-pearl.vercel.app/HTML/Gracias.html">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <button type="submit" class="boton-enviar">
+                        Enviar
+                    </button>
+                </form>
+                <!-- Línea vertical marrón -->
+                <div class="linea-vertical"></div>
+
+                <!-- Imagen de pastel -->
+                <div class="contenedor-imagen">
+                    <img src="/Material/Icons/Logocompleto.png" alt="Dulce Antojito" />
+                </div>
+        </div>
+    </main>
+
+</body>
 </html>
