@@ -4,6 +4,9 @@ main {
     align-content: center;
 }
 
+.frase p, .frase b {
+    font-size: 2.5vw !important;
+}
 
 .carrito-contenedor {
     background-color: #ffffff;
@@ -114,5 +117,12 @@ main {
 #modalMensajeCerrar:hover {
     background: #571b02;
     color: #fff;
+}
+
+@media (max-width: 900px) {
+    .frase p, .frase b {
+        font-size: 5vw !important;
+    }
+    
 }
 

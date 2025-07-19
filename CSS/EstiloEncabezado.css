@@ -136,7 +136,6 @@ header {
 
 .icon-registro{
     margin-left: 10%;
-    width: 15%;
 }
 
 #toggle-menu{
@@ -228,8 +227,7 @@ header {
         width: auto;
     }
 
-    .boton-pide,
-    .icon-registro {
+    .boton-pide {
         font-size: 1rem;
         display: none !important;
     }
