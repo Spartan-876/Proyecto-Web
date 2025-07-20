@@ -28,11 +28,11 @@
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-/* Inputs y textarea */
 .formulario input[type="text"],
 .formulario input[type="tel"],
 .formulario input[type="email"],
 .formulario textarea {
+    font-family: poppins, serif;
     width: 100%;
     padding: 0.5rem;
     box-sizing: border-box;
@@ -45,12 +45,12 @@
 }
 
 .boton-enviar {
+    font-family: poppins, serif;
     background-color: #FFA726;
     color: #5C1D03;
     border: 2px solid #5C1D03;
     padding: 0.6rem 2rem;
     font-weight: bold;
-    font-family: Georgia, serif;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
