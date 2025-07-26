@@ -82,13 +82,12 @@ header {
     font-family: poppins, sans-serif;
     font-style: normal;
     font-size: 1.3vw;
+    transition: background-color 0.3s;
 }
 
 .boton-pide:hover {
     background-color: #571b02;
     color: white;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .frase {

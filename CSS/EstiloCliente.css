@@ -3,6 +3,7 @@ section{
 }
 
 .Contenedor-Carrusel {
+    background-color: #f2f2f2;
     position: relative;
     max-width: max-content;
     max-height: 80vh;
@@ -20,26 +21,25 @@ section{
     animation: deslizar 40s infinite;
 }
 @keyframes deslizar {
-    /* Cada bloque es 7s: 5s stop + 2s transición */
 
     0%     { transform: translateX(0%); }
-    12.5%  { transform: translateX(0%); }       /* 5s stop (12.5% de 40s = 5s) */
-    17.5%  { transform: translateX(-100%); }    /* 2s transición (5% de 40s = 2s) */
+    12.5%  { transform: translateX(0%); }       
+    17.5%  { transform: translateX(-100%); }    
 
-    29.5%  { transform: translateX(-100%); }    /* 5s stop */
-    34.5%  { transform: translateX(-200%); }    /* 2s transición */
+    29.5%  { transform: translateX(-100%); }
+    34.5%  { transform: translateX(-200%); }    
 
-    46.5%  { transform: translateX(-200%); }    /* 5s stop */
-    51.5%  { transform: translateX(-300%); }    /* 2s transición */
+    46.5%  { transform: translateX(-200%); }    
+    51.5%  { transform: translateX(-300%); }    
 
-    63.5%  { transform: translateX(-300%); }    /* 5s stop */
-    68.5%  { transform: translateX(-400%); }    /* 2s transición */
+    63.5%  { transform: translateX(-300%); }    
+    68.5%  { transform: translateX(-400%); }    
 
-    80.5%  { transform: translateX(-400%); }    /* 5s stop */
-    85.5%  { transform: translateX(-500%); }    /* 2s transición */
+    80.5%  { transform: translateX(-400%); }    
+    85.5%  { transform: translateX(-500%); }    
 
-    97.5%  { transform: translateX(-500%); }    /* 5s stop */
-    100%   { transform: translateX(0%); }       /* vuelta al inicio */
+    97.5%  { transform: translateX(-500%); }   
+    100%   { transform: translateX(0%); }      
 }
 
 .contenedor {
